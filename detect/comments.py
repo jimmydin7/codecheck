@@ -2,6 +2,10 @@
 # then it will go through functions to detect em-dash patterns and more 
 # point system -> final outcome
 
+#3 steps for AI comment detection:
+#first is the ML model
+#then the code checks manually for AI patterns such as the em dash "-"
+#the code check if there is a space beetween the comment start and the text (etc # This is a comment) there is a space beetween # and T
 import re
 
 def separate_comments_from_code(source, language):
